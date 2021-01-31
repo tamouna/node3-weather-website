@@ -11,6 +11,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             callback(undefined, {
                 temperature: body.current.temperature,
+                humidity: body.current.humidity
             })
         }
 
